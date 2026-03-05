@@ -1,0 +1,13 @@
+import sys
+import os
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, project_root)
+
+from tree_module.analyze import analyze_forest
+
+image_path = "data/raw/forest_sample.jpg"
+
+result = analyze_forest(image_path, resolution=10)
+
+print(result)
