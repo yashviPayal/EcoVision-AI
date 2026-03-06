@@ -78,9 +78,9 @@ section[data-testid="stFileUploader"] {
 /* Sidebar */
 
 section[data-testid="stSidebar"] {
-
+    
     background: linear-gradient(180deg,#052411,#03170d);
-
+    color: white;
 }
 
 /* Footer */
