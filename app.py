@@ -207,6 +207,9 @@ if uploaded_files:
 
             st.divider()
 
+            st.subheader("AI Forest Intelligence Report")
+            st.success(result["analysis_report"])
+
             st.subheader("Species Classification")
 
             # Load the cluster-colored image
@@ -224,6 +227,8 @@ if uploaded_files:
                 legend_html += f"<div style='display:flex; align-items:center; gap:5px;'><div style='width:20px; height:20px; background:{hex_color}; border:1px solid #000'></div>Species {i}</div>"
             legend_html += "</div>"
             st.markdown(legend_html, unsafe_allow_html=True)
+
+            
 
 # ---------------- FOOTER CREDIT ---------------- #
 
