@@ -6,8 +6,8 @@ sys.path.insert(0, project_root)
 
 from tree_module.analyze import analyze_forest
 
-image_path = "data/raw/forest_sample.jpg"
+image_path = "data/raw/demo_2.jpg"
 
-result = analyze_forest(image_path, resolution=10)
+result = analyze_forest(image_path, resolution=0.5)
 
 print(result)
